@@ -9,7 +9,7 @@ export async function GET(request: Request, { params }: { params: { user_id: str
     }
 
     // Call your backend API
-    const response = await fetch(`http://localhost:8000/history/${userId}`)
+    const response = await fetch(`https://website-summarization-chatbot.onrender.com`)
     const data = await response.json()
 
     return NextResponse.json(data)
