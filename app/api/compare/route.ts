@@ -10,7 +10,7 @@ export async function POST(request: Request) {
     }
 
     // Call your backend API
-    const response = await fetch("https://website-summarization-chatbot.onrender.com", {
+    const response = await fetch("https://website-summarization-chatbot.onrender.com/compare", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
